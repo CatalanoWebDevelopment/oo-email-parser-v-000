@@ -17,6 +17,7 @@ class EmailParser
   def parse
     @@all.each do |email|
       new_email = email.sub(/,\ /, ",")
+      new_email.split(",")
       binding.pry
     end
   end
