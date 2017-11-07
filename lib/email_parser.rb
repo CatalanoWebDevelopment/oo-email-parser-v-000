@@ -15,7 +15,7 @@ class EmailParser
   def parse
     parsed = @emails.sub(/\ /, "")
     parsed_array = parsed.split(",")
-    binding.pry
+    parsed_array
   end
 
 end
