@@ -13,8 +13,8 @@ class EmailParser
   end
 
   def parse
-    parsed = @emails.sub(/,\ /, "")
-    parsed_array = parsed.split("")
+    parsed = @emails.sub(/,\ /, " ")
+    parsed_array = parsed.split(" ")
     parsed_array
   end
 
