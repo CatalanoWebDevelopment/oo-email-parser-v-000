@@ -20,6 +20,7 @@ class EmailParser
       new_email.split(",")
       binding.pry
     end
+    new_email
   end
 
 end
