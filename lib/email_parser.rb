@@ -11,16 +11,12 @@ class EmailParser
   @@all = []
 
   def initialize(emails)
-    @@all << emails
+    @emails = emails
   end
 
   def parse
-    @@all.each do |email|
-      new_email = email.sub(/,\ /, ",")
-      new_email.split(",")
-    end
-    new_email
-    binding.pry
+    @emails.sub(/,\ /, ",")
+    pry
   end
 
 end
